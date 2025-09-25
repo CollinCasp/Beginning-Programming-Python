@@ -34,11 +34,14 @@ wn = turtle.Screen()         # Set up the window and its attributes
 wn.bgcolor("lightgreen")
 
 tess = turtle.Turtle()       # Create tess and set some attributes
-tess.color("blue", "red")
 tess.pensize(3)
+if xs == 200:
+    tess.color("yellow", "yellow")
+else:
+    tess.color("blue", "red")
 
-for v in xs:              # Assume xs and tess are ready
+
+for v in xs:
     draw_bar(tess, v)
-
 
 wn.mainloop()
