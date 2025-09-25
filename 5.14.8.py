@@ -9,8 +9,9 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
-def main():
-    pass
+#-----------------------
+# Currently Incomplete -
+#-----------------------
 
 import turtle
 
@@ -45,3 +46,4 @@ for v in xs:
     draw_bar(tess, v)
 
 wn.mainloop()
+
