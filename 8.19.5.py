@@ -68,9 +68,9 @@ e_word = count_e(clean)
 
 percentage = (e_word / total) * 100
 
-test(remove_punctuation('"Well, I never did!", said Alice.') == "Well I never did said Alice")
-test(remove_punctuation("Are you very, very, sure?") == "Are you very very sure")
-print(count_word("bananna"))
-
-
 print(f'Your text contains {total} words, of which {e_word} ({percentage:.1f}%) contain an "e".')
+
+test(remove_punctuation('"Well, I never did!", said Alice.') == "Well I never did said Alice")
+test(count_word("bananna"))
+test(count_e("Hello World, It is great today") == 2)
+
